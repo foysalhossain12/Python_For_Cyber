@@ -1,0 +1,14 @@
+# Reverse Cipher 
+
+import pyfiglet
+banner = pyfiglet.figlet_format("Reverse Cipher")
+print(banner)
+message = input("Enter your  Message for Reverse:")
+translated =''
+i = len(message)-1
+
+while i>=0:
+    translated = translated + message[i]
+    i=i-1
+
+print(translated)
